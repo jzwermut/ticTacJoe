@@ -11,6 +11,12 @@ h2 {
 	font-size: 50px;
 }
 
+input {
+	margin-left: 20px;
+	height: 40px;
+	width:  250px;
+}
+
 button {
   appearance: button;
   background-color: #1899D6;
@@ -39,7 +45,8 @@ button {
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: 70%;
+  width: 115px;
+  margin-right: 20px;
 }
 
 button:after {
@@ -83,10 +90,20 @@ button:disabled {
 	margin-top: 5%;
 }
 
-.reset {
+.hideSection {
+	display:  none;
+}
+
+.playAgain {
 	width: 600px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 30px;
+}
+
+.changeJoes {
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 10px;
 }
 
 .who {
@@ -106,16 +123,30 @@ button:disabled {
 	background-color: #1289ce;
 }
 
+.joes {
+	display:  inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.joes:hover {
+	background-color: #f6ff99;
+}
+
 .square:hover {
 	background-color: #f6ff99;
 }
 
-.cage {
+/*.cage {
 	background-image: url("https://www.placecage.com//200/200")
 }
 
 .murray {
 	background-image: url("http://www.fillmurray.com/200/200")
+}*/
+
+.broJoe {
+	background-image:  url("images/broJoe.jpeg");
 }
 
 .yourturn {

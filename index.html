@@ -11,7 +11,79 @@
 <body>
 	<div id="container">
 		<h1>Welcome to Tic Tac Joe</h1>
-		<h2></h2>
+		<h2 id="announcer"></h2>
+		<section class="setp1Name">
+			<h2>Player One - Choose your name</h2>
+			<input type="text" id="p1Name" placeholder="Player 1 name">
+			<button id="p1Name">Set name</button>
+		</section>
+
+		<section class="setp2Name">
+			<h2>Player Two - Choose your name</h2>
+			<input type="text" id="p2Name" placeholder="Player 2 name">
+			<button id="p2Name">Set name</button>
+		</section>
+
+		<section id="setJoe">
+			<section class="setp1Joe">
+				<h2>Player One - Choose your Joe!</h2>
+				<div class="joes" id="cooljoe">
+					<h3>Cool Joe</h3>
+					<img id="cooljoe" src="images/cooljoe.jpeg">
+				</div>
+				<div class="joes" id="determinedJoe">
+					<h3>Determined Joe</h3>
+					<img id="determinedJoe" src="images/determinedJoe.jpeg">
+				</div>
+				<div class="joes" id="sleepyJoe">
+					<h3>Sleepy Joe</h3>
+					<img id="sleepyJoe" src="images/sleepyJoe.jpeg">
+				</div>
+				<div class="joes" id="whoaJoe">
+					<h3>Whoa Joe</h3>
+					<img id="whoaJoe" src="images/whoaJoe.jpeg">
+				</div>
+				<div class="joes" id="broJoe">
+					<h3>bro Joe</h3>
+					<img id="broJoe" src="images/broJoe.jpeg">
+				</div>
+				<div class="joes" id="hunterJoe">
+					<h3>Hunter Joe</h3>
+					<img id="hunterJoe" src="images/hunterJoe.jpeg">
+				</div>
+			</section>
+
+			<section class="setp2Joe">
+				<h2>Player 2 - Choose your Joe!</h2>
+				<div class="joes" id="cooljoe">
+					<h3>Cool Joe</h3>
+					<img id="cooljoe" src="images/cooljoe.jpeg">
+				</div>
+				<div class="joes" id="determinedJoe">
+					<h3>Determined Joe</h3>
+					<img id="determinedJoe" src="images/determinedJoe.jpeg">
+				</div>
+				<div class="joes" id="sleepyJoe">
+					<h3>Sleepy Joe</h3>
+					<img id="sleepyJoe" src="images/sleepyJoe.jpeg">
+				</div>
+				<div class="joes" id="whoaJoe">
+					<h3>Whoa Joe</h3>
+					<img id="whoaJoe" src="images/whoaJoe.jpeg">
+				</div>
+				<div class="joes" id="broJoe">
+					<h3>bro Joe</h3>
+					<img id="broJoe" src="images/broJoe.jpeg">
+				</div>
+				<div class="joes" id="hunterJoe">
+					<h3>Hunter Joe</h3>
+					<img id="hunterJoe" src="images/hunterJoe.jpeg">
+				</div>
+			</section>
+
+		</section>
+
+
 		<div id="turn">
 			<div class="who" id="player1">
 				<h3>Player 1</h3>
@@ -23,7 +95,8 @@
 				<img src="http://www.placecage.com/200/200">
 			</div>
 		</div>
-		<div id="gameBoard">
+		
+		<section id="gameBoard">
 			<div class="square" id="top-left"></div>
 			<div class="square" id="top-mid"></div>
 			<div class="square" id="top-right"></div>
@@ -33,9 +106,13 @@
 			<div class="square" id="bottom-left"></div>
 			<div class="square" id="bottom-mid"></div>
 			<div class="square" id="bottom-right"></div>
+		</section>
+		
+		<div class="playAgain">
+			<button class="playAgain">Start again</button>
 		</div>
-		<div class="reset">
-			<button>Reset</button>
+		<div class="changeJoes">
+			<button class="changeJoes">Change Joes and start again</button>
 		</div>
 	</div>
 	
