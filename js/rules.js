@@ -86,5 +86,11 @@ const tictacjoe = {
 		else if (this.board.length === 9) {
 			return `draw`;
 		}
+	},
+
+reset: function () {
+	this.player1Moves.splice(0, this.player1Moves.length);
+	this.player2Moves.splice(0, this.player2Moves.length);
+	this.board.splice(0, this.board.length);
 	}
 }

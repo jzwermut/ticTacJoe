@@ -36,65 +36,55 @@ const makeChoice = (choice) => {
 $(document).ready(function() {
 	$('#player1').addClass('yourturn');
 
-
 	$(`#top-left`).on('click', function() {
 		makeChoice('top-left');
 		checkResult();
 	})
-})
 
-$(document).ready(function() {
 	$(`#top-mid`).on('click', function() {
 		makeChoice('top-mid');
 		checkResult();
 	})
-})
 
-$(document).ready(function() {
 	$(`#top-right`).on('click', function() {
 		makeChoice('top-right');
 		checkResult();
 	})
-})
 
-$(document).ready(function() {
+
 	$(`#mid-left`).on('click', function() {
 		makeChoice('mid-left');
 		checkResult();
 	})
-})
 
-$(document).ready(function() {
 	$(`#mid-mid`).on('click', function() {
 		makeChoice('mid-mid');
 		checkResult();
 	})
-})
 
-$(document).ready(function() {
 	$(`#mid-right`).on('click', function() {
 		makeChoice('mid-right');
 		checkResult();
 	})
-})
 
-$(document).ready(function() {
 	$(`#bottom-left`).on('click', function() {
 		makeChoice('bottom-left');
 		checkResult();
 	})
-})
 
-$(document).ready(function() {
 	$(`#bottom-mid`).on('click', function() {
 		makeChoice('bottom-mid');
 		checkResult();
 	})
-})
 
-$(document).ready(function() {
 	$(`#bottom-right`).on('click', function() {
 		makeChoice('bottom-right');
 		checkResult();
+	})
+
+	$('button').on('click', function() {
+		tictacjoe.reset();
+		$('.square').removeClass('cage');
+		$('.square').removeClass('murray');
 	})
 })
