@@ -12,6 +12,7 @@
 	<div id="container">
 		<h1>Welcome to Tic Tac Joe</h1>
 		<h2 id="announcer"></h2>
+		<canvas id="confetti"></canvas>
 		<section class="setp1Name">
 			<h2>Player One - Choose your name</h2>
 			<input type="text" id="p1Name" placeholder="Player 1 name">
@@ -26,58 +27,66 @@
 
 		<section id="setJoe">
 			<section class="setp1Joe">
-				<h2>Player One - Choose your Joe!</h2>
-				<div class="joes" id="cooljoe">
-					<h3>Cool Joe</h3>
-					<img id="cooljoe" src="images/cooljoe.jpeg">
+				<div class="row">
+					<h2>Player One - Choose your Joe!</h2>
+					<div class="joes" id="cooljoe">
+						<h3>Cool Joe</h3>
+						<img id="cooljoe" src="images/cooljoe.jpeg">
+					</div>
+					<div class="joes" id="determinedJoe">
+						<h3>Determined Joe</h3>
+						<img id="determinedJoe" src="images/determinedJoe.jpeg">
+					</div>
+					<div class="joes" id="sleepyJoe">
+						<h3>Sleepy Joe</h3>
+						<img id="sleepyJoe" src="images/sleepyJoe.jpeg">
+					</div>
 				</div>
-				<div class="joes" id="determinedJoe">
-					<h3>Determined Joe</h3>
-					<img id="determinedJoe" src="images/determinedJoe.jpeg">
-				</div>
-				<div class="joes" id="sleepyJoe">
-					<h3>Sleepy Joe</h3>
-					<img id="sleepyJoe" src="images/sleepyJoe.jpeg">
-				</div>
-				<div class="joes" id="whoaJoe">
-					<h3>Whoa Joe</h3>
-					<img id="whoaJoe" src="images/whoaJoe.jpeg">
-				</div>
-				<div class="joes" id="broJoe">
-					<h3>bro Joe</h3>
-					<img id="broJoe" src="images/broJoe.jpeg">
-				</div>
-				<div class="joes" id="hunterJoe">
-					<h3>Hunter Joe</h3>
-					<img id="hunterJoe" src="images/hunterJoe.jpeg">
+				<div class="row">
+					<div class="joes" id="whoaJoe">
+						<h3>Whoa Joe</h3>
+						<img id="whoaJoe" src="images/whoaJoe.jpeg">
+					</div>
+					<div class="joes" id="broJoe">
+						<h3>Bro Joe</h3>
+						<img id="broJoe" src="images/broJoe.jpeg">
+					</div>
+					<div class="joes" id="hunterJoe">
+						<h3>Hunter Joe</h3>
+						<img id="hunterJoe" src="images/hunterJoe.jpeg">
+					</div>
 				</div>
 			</section>
 
 			<section class="setp2Joe">
 				<h2>Player 2 - Choose your Joe!</h2>
-				<div class="joes" id="cooljoe">
-					<h3>Cool Joe</h3>
-					<img id="cooljoe" src="images/cooljoe.jpeg">
+				<div class="row">
+					<div class="joes" id="cooljoe">
+						<h3>Cool Joe</h3>
+						<img id="cooljoe" src="images/cooljoe.jpeg">
+					</div>
+					<div class="joes" id="determinedJoe">
+						<h3>Determined Joe</h3>
+						<img id="determinedJoe" src="images/determinedJoe.jpeg">
+					</div>
+					<div class="joes" id="sleepyJoe">
+						<h3>Sleepy Joe</h3>
+						<img id="sleepyJoe" src="images/sleepyJoe.jpeg">
+					</div>
 				</div>
-				<div class="joes" id="determinedJoe">
-					<h3>Determined Joe</h3>
-					<img id="determinedJoe" src="images/determinedJoe.jpeg">
-				</div>
-				<div class="joes" id="sleepyJoe">
-					<h3>Sleepy Joe</h3>
-					<img id="sleepyJoe" src="images/sleepyJoe.jpeg">
-				</div>
-				<div class="joes" id="whoaJoe">
-					<h3>Whoa Joe</h3>
-					<img id="whoaJoe" src="images/whoaJoe.jpeg">
-				</div>
-				<div class="joes" id="broJoe">
-					<h3>bro Joe</h3>
-					<img id="broJoe" src="images/broJoe.jpeg">
-				</div>
-				<div class="joes" id="hunterJoe">
-					<h3>Hunter Joe</h3>
-					<img id="hunterJoe" src="images/hunterJoe.jpeg">
+				<div class="row">
+					<div class="joes" id="whoaJoe">
+						<h3>Whoa Joe</h3>
+						<img id="whoaJoe" src="images/whoaJoe.jpeg">
+					</div>
+					<div class="joes" id="broJoe">
+						<h3>Bro Joe</h3>
+						<img id="broJoe" src="images/broJoe.jpeg">
+					</div>
+					<div class="joes" id="hunterJoe">
+						<h3>Hunter Joe</h3>
+						<img id="hunterJoe" src="images/hunterJoe.jpeg">
+					</div>
 				</div>
 			</section>
 
@@ -116,6 +125,6 @@
 			<button class="changeJoes">Change Joes and start again</button>
 		</div>
 	</div>
-	
+	<script src="js/confetti.js"></script>
 </body>
 </html>
