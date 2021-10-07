@@ -10,12 +10,18 @@ const checkResult = () => {
 		$('canvas').removeClass('hideSection');
 		$('#turn').addClass('hideSection');
 		$('section#gameBoard').addClass('hideSection');
+		$('.score').removeClass('hideSection');
+		$('.score p#p1').text(`Player 1: ${tictacjoe.score.player1}`);
+		$('.score p#p2').text(`Player 2: ${tictacjoe.score.player2}`);
 	}
 	else if (check === 'p2') {
 		$('h2#announcer').text(`${p2Name} wins!`)
 		$('canvas').removeClass('hideSection');
 		$('#turn').addClass('hideSection');
 		$('section#gameBoard').addClass('hideSection');
+		$('.score').removeClass('hideSection');
+		$('.score p#p1').text(`Player 1: ${tictacjoe.score.player1}`);
+		$('.score p#p2').text(`Player 2: ${tictacjoe.score.player2}`);
 	}
 	else if (check === 'draw') {
 		$('h2#announcer').text('Game Over. It\'s a draw')
@@ -76,6 +82,7 @@ $(document).ready(function() {
 	$('.playAgain').addClass('hideSection');
 	$('.changeJoes').addClass('hideSection');
 	$('canvas').addClass('hideSection');
+	$('.score').addClass('hideSection');
 
 	$('button#p1Name').on('click', function() { //when player 1 sets their name do the following
 		setNameP1();
@@ -187,7 +194,7 @@ $(document).ready(function() {
 	})
 
 	$('button.changeJoes').on('click', function() { //resets the game
-		tictacjoe.reset();
+		tictacjoe.hardReset();
 		$('section.setp1Name').removeClass('hideSection');
 		$('.square').css("background-image", "");
 		$('#player1').addClass('yourturn')
@@ -198,6 +205,7 @@ $(document).ready(function() {
 		$('.changeJoes').addClass('hideSection');
 		$('canvas').addClass('hideSection');
 		$('h2#announcer').text('');
+		$('.score').addClass('hideSection');
 	})
 
 })

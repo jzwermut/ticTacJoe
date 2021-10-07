@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/rules.js"></script>
+	<script src="js/confetti.js"></script>
 	<script src="js/dom.js"></script>
 	<title>Tic Tac Joe</title>
 </head>
@@ -97,12 +98,12 @@
 			<h2>Players</h2>
 			<div class="who" id="player1">
 				<h3>Player 1</h3>
-				<img src="http://www.fillmurray.com/200/200">
+				<img src="https://www.fillmurray.com/200/200">
 			</div>
 
 			<div class="who" id="player2">
 				<h3>Player 2</h3>
-				<img src="http://www.placecage.com/200/200">
+				<img src="https://www.placecage.com/200/200">
 			</div>
 		</div>
 		
@@ -117,14 +118,18 @@
 			<div class="square" id="bottom-mid"></div>
 			<div class="square" id="bottom-right"></div>
 		</section>
+
+		<div class="score">
+			<p id="p1"></p>
+			<p id="p2"></p>
+		</div>
 		
 		<div class="playAgain">
-			<button class="playAgain">Start again</button>
+			<button class="playAgain">Play again</button>
 		</div>
 		<div class="changeJoes">
-			<button class="changeJoes">Change Joes and start again</button>
+			<button class="changeJoes">Reset</button>
 		</div>
 	</div>
-	<script src="js/confetti.js"></script>
 </body>
 </html>
