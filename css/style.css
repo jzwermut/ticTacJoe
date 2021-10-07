@@ -113,7 +113,6 @@ button:disabled {
 }
 
 .who {
-	/*border: 1px solid black;*/
 	width: 200px;
 	height: 263px;
 	display: inline-block;
@@ -142,14 +141,6 @@ button:disabled {
 .square:hover {
 	background-color: #f6ff99;
 }
-
-/*.cage {
-	background-image: url("https://www.placecage.com//200/200")
-}
-
-.murray {
-	background-image: url("http://www.fillmurray.com/200/200")
-}*/
 
 .broJoe {
 	background-image:  url("images/broJoe.jpeg");

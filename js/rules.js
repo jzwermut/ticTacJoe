@@ -1,21 +1,13 @@
-// Render a game board in the browser
-// Switch turns between X and O (or whichever markers you select)
-// Visually display which side won if a player gets three in a row or show a draw/"cat’s game" if neither wins
-// Include separate HTML / CSS / JavaScript files
-// Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
-// Use Javascript for DOM manipulation
-// Deploy your game online, where the rest of the world can access it
-// Use semantic markup for HTML and CSS (adhere to best practices)
 const tictacjoe = {
-	player1Moves: [],
+	player1Moves: [], //Logs all moves player 1 makes per round
 
-	player2Moves: [],
+	player2Moves: [], //Logs all moves player 2 makes per round
 
-	board: [],
+	board: [], //Logs all moves made on the board per round
 
 	score: {
-		player1: 0,
-		player2: 0
+		player1: 0, //Keeps track of the score across multiple rounds for player 1
+		player2: 0  //Keeps track of the score across multiple rounds for player 2
 	},
 
 	turn: function () { //alternates turns depending on number of moves made. Player one always goes first in this case
@@ -27,7 +19,7 @@ const tictacjoe = {
 			} 
 		},
 
-	choose: function (choice) {
+	choose: function (choice) { //takes in a choice and adds that choice to the correct player or returns 'already selected' if that square is full
 		if (this.board.includes(choice)) {
 			return 'Already selected';
 		}
@@ -43,7 +35,7 @@ const tictacjoe = {
 		}
 	},
 
-	checkWinner: function () {
+	checkWinner: function () { //checks for a winner and returns either a winner, a result of a draw or nothing if the game should continue.
 		let p1Row = [];
 		let p1Col = [];
 		let p2Row =[];
@@ -101,12 +93,14 @@ const tictacjoe = {
 		}
 	},
 
+//resets the board
 reset: function () {
 	this.player1Moves.splice(0, this.player1Moves.length);
 	this.player2Moves.splice(0, this.player2Moves.length);
 	this.board.splice(0, this.board.length);
 	},
 
+//resets the board and the score across rounds
 hardReset: function () {
 	this.reset();
 	this.score.player1 = 0;
