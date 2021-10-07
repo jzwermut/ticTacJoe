@@ -2,7 +2,7 @@ $(document).ready(function(){
     let canvas = document.getElementById('confetti');
 
     canvas.width = 960;
-    canvas.height = 540;
+    canvas.height = 260;
 
     let ctx = canvas.getContext('2d');
     let pieces = [];

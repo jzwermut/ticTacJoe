@@ -11,8 +11,8 @@ const checkResult = () => {
 		$('#turn').addClass('hideSection');
 		$('section#gameBoard').addClass('hideSection');
 		$('.score').removeClass('hideSection');
-		$('.score p#p1').text(`Player 1: ${tictacjoe.score.player1}`);
-		$('.score p#p2').text(`Player 2: ${tictacjoe.score.player2}`);
+		$('.score p#p1').text(`${p1Name}: ${tictacjoe.score.player1}`);
+		$('.score p#p2').text(`${p2Name}: ${tictacjoe.score.player2}`);
 	}
 	else if (check === 'p2') {
 		$('h2#announcer').text(`${p2Name} wins!`)
@@ -20,8 +20,9 @@ const checkResult = () => {
 		$('#turn').addClass('hideSection');
 		$('section#gameBoard').addClass('hideSection');
 		$('.score').removeClass('hideSection');
-		$('.score p#p1').text(`Player 1: ${tictacjoe.score.player1}`);
-		$('.score p#p2').text(`Player 2: ${tictacjoe.score.player2}`);
+		$('.score p#p1').text(`${p1Name}: ${tictacjoe.score.player1}`);
+		$('.score p#p2').text(`${p2Name}: ${tictacjoe.score.player2}`);
+		
 	}
 	else if (check === 'draw') {
 		$('h2#announcer').text('Game Over. It\'s a draw')
